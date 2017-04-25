@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    
+    <script>
+
+        
+        
+        function losuj(){
+            console.log(console.time(losuj));
+            
+            for(i = 0; i<1000; i++){
+                var liczba = Math.round(Math.random);
+                localStorage.setItem('random', liczba);
+                
+                console.log(localStorage.getItem('random'));
+            }
+            console.log(console.timeEnd(losuj));
+        }
+
+        
+    function zapisz() {
+        var name = document.getElementById('txt_name');
+        var surname = document.getElementById('txt_nazwisko');
+        
+        localStorage.setItem('name', name.value);
+        localStorage.setItem('surname', surname.value);
+
+        console.log(localStorage.getItem('name') + localStorage.getItem('surname'));
+    }
+    
+    
+    function odczytaj(){
+        document.getElementById('result').innerHTML = localStorage.getItem('name') +" " + localStorage.getItem('surname');
+        
+    }
+    
+
+</script>
+    
+</head>
+<body>
+
+    <label>Imie: </label><input name="imie" id="txt_name"/>
+    <label>Nazwisko: </label><input name="nazwisko" id="txt_nazwisko"/>
+    </br>
+    <input type=button value="Zapisz" onclick="zapisz()">
+    <input type=button value="Odczytaj" onclick="odczytaj()">
+    <input type=button value="losuj" onclick="losuj()">
+
+    
+    <div id="result"></div>
+
+
+</body>
+
+
+</html>

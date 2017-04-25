@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    
+    <script>
+
+        
+        
+    
+    function zapisz() {
+        
+        var login = document.getElementById('txt_login');
+        var password = document.getElementById('txt_password');
+        
+        localStorage.setItem('login', login.value);
+        localStorage.setItem('password', password.value);
+
+        console.log(localStorage.getItem('login') + localStorage.getItem('password'));
+    }
+    
+    
+    function odczytaj(){
+        
+        var login = document.getElementById('txt_login');
+        var password = document.getElementById('txt_password');
+        
+        if(login.value == localStorage.getItem('login') && password.value == localStorage.getItem('password')){
+            document.getElementById('result').innerHTML = "Użytkownik zalogowany poprawnie!";
+        }else{
+            document.getElementById('result').innerHTML = "Error";
+        }
+        
+        
+        
+    }
+    
+
+</script>
+    
+</head>
+<body>
+
+    <label>Login: </label><input name="login" id="txt_login"/>
+    <label>Password: </label><input name="password" id="txt_password"/>
+    </br>
+    <input type=button value="Zarejestruj" onclick="zapisz()">
+    <input type=button value="Zaloguj" onclick="odczytaj()">
+
+    
+    <div id="result"></div>
+
+
+</body>
+
+
+</html>

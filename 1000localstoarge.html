@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    
+    <script>
+
+        
+        
+        function losuj(){
+            console.log(console.time(losuj));
+            
+            for(i = 0; i<100000; i++){
+                var liczba = Math.round(Math.random);
+                localStorage.setItem('random', liczba);
+                
+                console.log(localStorage.getItem('random'));
+                
+            }
+            console.log(console.timeEnd(losuj));
+        
+        }
+
+        
+
+</script>
+    
+</head>
+<body>
+
+    
+    <input type=button value="losuj" onclick="losuj()">
+
+    
+    <div id="result"></div>
+
+
+</body>
+
+
+</html>

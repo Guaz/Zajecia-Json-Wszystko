@@ -1,0 +1,139 @@
+{
+"person": [
+{
+"name": "Aaa1",
+"surname": "Bbb1",
+"age": 30,
+"gender": "M",
+"email": "aaa@bbb.com",
+"phone": {
+  "landline": 123123123,
+  "mobile": 321321321
+ },
+ "address": {
+   "street": "SSSS",
+   "home number": 11,
+   "postal code": "11-111",
+   "city": "CCC"
+ },
+ "family": {
+  "spouse": {
+    "name": "Ddd",
+    "surname": "Eee"
+  },
+  "children list": [
+    {
+      "child name": "Ggg",
+      "surname": "Bbb",
+      "age": 7,
+      "gender": "F",
+      "interests": [
+        "tttt",
+        "dddd"
+        ]
+    },
+    {
+    "child name": "Fff",
+      "surname": "Bbb",
+      "age": 5,
+      "gender": "F",
+      "interests": [
+        "kkkk",
+        "oooo"
+        ]
+    }
+    ]
+ }
+},
+{
+"name": "Aaa2",
+"surname": "Bbb2",
+"age": 30,
+"gender": "M",
+"email": "aaa@bbb.com",
+"phone": {
+  "landline": 123123123,
+  "mobile": 321321321
+ },
+ "address": {
+   "street": "SSSS",
+   "home number": 11,
+   "postal code": "11-111",
+   "city": "CCC"
+ },
+ "family": {
+  "spouse": {
+    "name": "Ddd",
+    "surname": "Eee"
+  },
+  "children list": [
+    {
+      "child name": "Ggg",
+      "surname": "Bbb",
+      "age": 7,
+      "gender": "F",
+      "interests": [
+        "tttt",
+        "dddd"
+        ]
+    },
+    {
+    "child name": "Fff",
+      "surname": "Bbb",
+      "age": 5,
+      "gender": "F",
+      "interests": [
+        "kkkk",
+        "oooo"
+        ]
+    }
+    ]
+ }
+},
+{
+"name": "Aaa3",
+"surname": "Bbb3",
+"age": 30,
+"gender": "M",
+"email": "aaa@bbb.com",
+"phone": {
+  "landline": 123123123,
+  "mobile": 321321321
+ },
+ "address": {
+   "street": "SSSS",
+   "home number": 11,
+   "postal code": "11-111",
+   "city": "CCC"
+ },
+ "family": {
+  "spouse": {
+    "name": "Ddd",
+    "surname": "Eee"
+  },
+  "children list": [
+    {
+      "child name": "Ggg",
+      "surname": "Bbb",
+      "age": 7,
+      "gender": "F",
+      "interests": [
+        "tttt",
+        "dddd"
+        ]
+    },
+    {
+    "child name": "Fff",
+      "surname": "Bbb",
+      "age": 5,
+      "gender": "F",
+      "interests": [
+        "kkkk",
+        "oooo"
+        ]
+    }
+    ]
+ }
+}
+]
+}

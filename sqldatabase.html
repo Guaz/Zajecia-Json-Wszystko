@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    
+    <script>
+
+        
+        var db = openDatabase('users','1.0','moja baza',2 * 1024 * 1024);
+        
+        db.transaction(function (tx) {
+   tx.executeSql('CREATE TABLE IF NOT EXISTS user (id unique, imie, nazwisko, wiek, username, email)');
+   tx.executeSql('INSERT INTO users (id, imie, nazwisko, wiek, username, email) VALUES (1, "Marcin","Wac",21,"Guaz1","ryutaken@gmail.com")');
+   tx.executeSql('INSERT INTO users (id, imie, nazwisko, wiek, username, email) VALUES (2, "Marcin","Wac",21,"Guaz2","ryutaken@gmail.com")');
+   tx.executeSql('INSERT INTO users (id, imie, nazwisko, wiek, username, email) VALUES (3, "Marcin","Wac",21,"Guaz3","ryutaken@gmail.com")');
+   
+   
+   
+});
+        
+        db.transaction(function (tx) {
+        tx.executeSql('SELECT * FROM user', [], function (tx, results) {
+      var len = results.rows.length, i;
+      
+      console.log("rows: " +len);
+	
+      for (i = 0; i < len; i++){
+          
+          var info = results.rows.item(i);
+          console.log(info.id, info.imie, info.nazwisko, info.wiek, info.username, info.email);
+          cosnole.log(info);
+         //alert(results.rows.item(i).log );
+      }
+	
+   }, null);
+});
+        
+
+</script>
+    
+</head>
+<body>
+
+<!--
+    <label>Imie: </label><input name="imie" id="txt_name"/>
+    <label>Nazwisko: </label><input name="nazwisko" id="txt_nazwisko"/>
+    </br>
+    <input type=button value="Zapisz" onclick="zapisz()">
+    <input type=button value="Odczytaj" onclick="odczytaj()">
+    <input type=button value="losuj" onclick="losuj()">
+
+    
+    <div id="result"></div>
+-->
+
+
+</body>
+
+
+</html>
